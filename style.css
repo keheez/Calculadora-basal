@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+body{
+        background-color: #f6f5f7;
+        font-family:'Montserrat',sans-serif;
+        text-align: center;   
+    }
+#contenedor {
+    width: 900px; 
+    height: 500px;
+    position: absolute;
+    background-color: red;
+    inset: 0;
+    margin: auto;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+    0 10px 10px rgba(0,0,0,0.22);
+    }    
+#formulario {
+    background-color:white;
+    float: left;
+    width: 50%;
+    height: 100%;
+    
+}   
+
+#detalle{
+    background-color:#FF416C;
+    float: left;
+    width: 50%;
+    height: 100%;
+    color: #eee;
+}
+
+.contenido{
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+#centrado{
+    text-align: left;
+}
+input {
+    background-color: #eee;
+    padding: 10px 15px;
+    border: none;
+    font-family:'Montserrat',sans-serif;
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-bottom: 5%;
+    /*al escribir que no salga el recuadro negro*/
+}  
+button{
+    padding: 10px 23px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family:'Montserrat',sans-serif;
+    background-color: #FF416C;
+    color: azure;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 25px;
+    
+    
+
+    /* ver porque el boton no da click*/
+}   
+#volumen {
+    color: rgb(142, 23, 222);
+    font-size: 25px;
+    font-weight: 900;
+}

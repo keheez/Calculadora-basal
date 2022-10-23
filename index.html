@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Calculadora de Hidratacion Basal</title>
+      <link rel="stylesheet" href="./style.css">
+
+    </head>
+    <body>
+        <div id="contenedor">
+            <div id="formulario"> 
+                <!-- FORMULARIO-->
+                <div class="contenido">    
+                    <h1 >Hidratacion Basal</h1>
+                    <p>Ingrese el peso en KG</p>
+                    <input type="number"placeholder="Ingrese el peso en Kg"> 
+                    <button>Calcular</button>
+                    <p id="volumen">1600 cc</p><!--agregar una clase de unidad de medida
+                         que diferencie el volumen de la unidad para que todas las
+                          unidades tengan un tama;o menor que el vol, osea que el id volumen
+                        este aparte de la class= unidaddemedida-->
+                </div>    
+            </div>
+            <div id="detalle"> 
+                <!--DETALLE-->
+                <div class="contenido"> 
+                    <h1>Como se calcula?</h1>
+                    <ul>
+                        <div id="centrado">
+                        <li>De 0kg a 10kg, se calcula 100cc por cada kilo.</li>
+                        <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg</li>
+                        <li>De 20kg para arriba, se suman 20cc por cada kilo adicional</li>
+                        </div>        
+                    </ul>
+                </div>
+            </div>    
+        </div>    
+    </body>
+</html>
