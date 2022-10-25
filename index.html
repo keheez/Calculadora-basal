@@ -1,25 +1,70 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Calculadora de Hidratacion Basal</title>
-      <link rel="stylesheet" href="./style.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora de Hidratacion Basal</title>
+        <link rel="stylesheet" href="./style.css">
 
     </head>
     <body>
+        
         <div id="contenedor">
             <div id="formulario"> 
                 <!-- FORMULARIO-->
                 <div class="contenido">    
                     <h1 >Hidratacion Basal</h1>
-                    <p>Ingrese el peso en KG</p>
-                    <input type="number"placeholder="Ingrese el peso en Kg"> 
-                    <button>Calcular</button>
-                    <p id="volumen">1600 cc</p><!--agregar una clase de unidad de medida
-                         que diferencie el volumen de la unidad para que todas las
-                          unidades tengan un tama;o menor que el vol, osea que el id volumen
-                        este aparte de la class= unidaddemedida-->
+                    <p>Cálculo de líquidos de mantenimiento para niños</p>
+                    <input type="number"placeholder="Ingrese el peso del paciente"> 
+                    <div id="check">
+                        <p>
+                            <label class="custom-radio-checkbox">
+                                <!-- Input oculto -->
+                                <input class="custom-radio-checkbox__input" type="radio" name="genero" value="kilogramo" checked>
+                                <!-- Imagen en sustitucion -->
+                                <span class="custom-radio-checkbox__show custom-radio-checkbox__show--radio"></span>
+                                <!-- Texto -->
+                                <span class="custom-radio-checkbox__text">Kilogramo</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label class="custom-radio-checkbox">
+                                <!-- Input oculto -->
+                                <input class="custom-radio-checkbox__input" type="radio" name="genero" value="Libra">
+                                <!-- Imagen en sustitucion -->
+                                <span class="custom-radio-checkbox__show custom-radio-checkbox__show--radio"></span>
+                                <!-- Texto -->
+                                <span class="custom-radio-checkbox__text">Libra</span>
+                            </label>
+                        </p>
+                    </div>
+                    <button class="boton"> Calcular </button>
+                       <div class="container">
+                        <table class="table">
+                            <caption>Holliday-Segar</caption>
+                            <thead>
+                                <tr>
+                                    <th>Peso</th>
+                                    <th>Volumen Diario</th>
+                                    <th>Mantenimiento</th>
+                                    <th>m+m/2</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-label="Peso">Kg</td>
+                                    <td data-label="Volumen Diario">cc</td>
+                                    <td data-label="Mantenimiento">cc/hr</td>
+                                    <td data-label="m+m/2">m+m/2</td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                        </div>
                 </div>    
-            </div>
+                
+        </div>
             <div id="detalle"> 
                 <!--DETALLE-->
                 <div class="contenido"> 
@@ -27,12 +72,19 @@
                     <ul>
                         <div id="centrado">
                         <li>De 0kg a 10kg, se calcula 100cc por cada kilo.</li>
+                        <br>
                         <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg</li>
+                        <br>
                         <li>De 20kg para arriba, se suman 20cc por cada kilo adicional</li>
                         </div>        
                     </ul>
+                    <div class="pagina2">
+                        <!--Pagina donde se ve el calculo, mas infor-->
+                         <a href="./metodocalculo.html"> mas info </a>
+                    </div>     
                 </div>
-            </div>    
+            </div>   
+            
         </div>    
     </body>
 </html>
