@@ -1,91 +1,52 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Calculadora de Hidratacion Basal</title>
-        <link rel="stylesheet" href="./style.css">
-        <link rel="icon" href="icons8-hospital-sign-48.ico">
-
-    </head>
-    <body>
-        
-        <div id="contenedor">
-            <div id="formulario"> 
-                <!-- FORMULARIO-->
-                <div class="contenido">    
-                    <h1 >Hidratacion Basal</h1>
-                    <p>Cálculo de líquidos de mantenimiento para niños</p>
-                    <input type="number"placeholder="Ingrese el peso del paciente"> 
-                    <div id="check">
-                        <p>
-                            <label class="custom-radio-checkbox">
-                                <!-- Input oculto -->
-                                <input class="custom-radio-checkbox__input" type="radio" name="genero" value="kilogramo" checked>
-                                <!-- Imagen en sustitucion -->
-                                <span class="custom-radio-checkbox__show custom-radio-checkbox__show--radio"></span>
-                                <!-- Texto -->
-                                <span class="custom-radio-checkbox__text">Kilogramo</span>
-                            </label>
-                        </p>
-                        <p>
-                            <label class="custom-radio-checkbox">
-                                <!-- Input oculto -->
-                                <input class="custom-radio-checkbox__input" type="radio" name="genero" value="Libra">
-                                <!-- Imagen en sustitucion -->
-                                <span class="custom-radio-checkbox__show custom-radio-checkbox__show--radio"></span>
-                                <!-- Texto -->
-                                <span class="custom-radio-checkbox__text">Libra</span>
-                            </label>
-                        </p>
-                    </div>
-                    <button class="boton"> Calcular </button>
-                       <div class="container">
-                        <table class="table">
-                            <caption>Holliday-Segar</caption>
-                            <thead>
-                                <tr>
-                                    <th>Peso</th>
-                                    <th>Volumen Diario</th>
-                                    <th>Mantenimiento</th>
-                                    <th>m+m/2</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td data-label="Peso">Kg</td>
-                                    <td data-label="Volumen Diario">cc</td>
-                                    <td data-label="Mantenimiento">cc/hr</td>
-                                    <td data-label="m+m/2">m+m/2</td>
-                                </tr>
-                            </tbody>
-
-                        </table>
-                        </div>
-                </div>    
-                
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="img/icons8-hospital-sign-48.ico"
+      type="x-icon"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>Calculadora de Hidratacion Basal</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="formulario">
+        <div class="contenido">
+          <h1>Hidratacion Basal</h1>
+          <input
+            type="number"
+            placeholder="Ingrese el peso del paciente"
+            id="peso"
+          />
+          <button id="calcular">Calcular</button>
+          <p id="mante"></p>
+          <p id="mante2"></p>
         </div>
-            <div id="detalle"> 
-                <!--DETALLE-->
-                <div class="contenido"> 
-                    <h1>Como se calcula?</h1>
-                    <ul>
-                        <div id="centrado">
-                        <li>De 0kg a 10kg, se calcula 100cc por cada kilo.</li>
-                        <br>
-                        <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg</li>
-                        <br>
-                        <li>De 20kg para arriba, se suman 20cc por cada kilo adicional</li>
-                        </div>        
-                    </ul>
-                    <div class="pagina2">
-                        <!--Pagina donde se ve el calculo, mas infor-->
-                         <a href="./metodocalculo.html"> mas info </a>
-                    </div>     
-                </div>
-            </div>   
-            
-        </div>    
-    </body>
+      </div>
+
+      <div class="detalles">
+        <div class="contenido">
+          <h2>Para tener en cuenta</h2>
+          <ul>
+            <li>
+              Cuando el paciente tiene hasta 30kg: Se utiliza el calculo de
+              Holliday-Segar.
+            </li>
+            <li>
+              Cuando el paciente tiene más de 30kg: Se calcula la hidratación
+              basal usando el método de superficie corporal.
+            </li>
+          </ul>
+          <!--Pagina donde se ve el calculo, mas infor-->
+        </div>
+        <a href="./metodocalculo.html"> Mas info </a>
+      </div>
+    </div>
+    
+  </body>
 </html>
