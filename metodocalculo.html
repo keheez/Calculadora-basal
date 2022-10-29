@@ -1,30 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html><!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/icons8-hospital-sign-48.ico" type="x-icon" />
+    <link rel="stylesheet" href="./style2.css" />
     <title>Calculadora de Hidratacion Basal</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="icons8-hospital-sign-48.ico">
 </head>
-<body>
-    <div id="metodo">
-       <ul> Notas
-            <li>Para niños de 0 a 10 kg las necesidades diarias de líquidos son de 100 mL/kg.</ul>
-            <li>Para niños de 11 a 20 kg, las necesidades diarias de líquidos son de 1000 mL + 50 mL/kg por cada kg por encima de 10.</ul>
-            <li>Para niños de >20 kg, las necesidades diarias de líquidos son de 1500 mL + 20 mL/kg por cada kg por encima de 20, hasta un máximo de 2400 mL al día.</ul>
-            <li>Tenga en cuenta que este cálculo no es aplicable a bebés recién nacidos (es decir, de 0 a 28 días después del parto a término).</ul>
-        </ul>
-          
-       <p> Ecuaciones utilizadas</p>
-            
-            Flujo de líquidos = Vol diario / 24
-    
-      <br>
-        <a href="index.html"> X</a>
-        <p>AUN FALTA APLICAR MAS CCS</p>
-    </div>
-    
-</body>
+    <body class="cuerpo2">
+        <div class="contenedor2">
+            <div class="detalles2">
+                <a href="index.html"> X</a>
+            </div>
+            <div class="notas2">
+                <div class="contenido2">
+                <h1>Notas</h1>
+                <ul>
+                    <h3>
+                    Tenga en cuenta que este cálculo no es aplicable a bebés recién
+                    nacidos<br />
+                    (es decir, de 0 a 28 días después del parto a término).
+                    </h3>
+                    <li>
+                    Cuando el paciente tiene hasta 10kg: Se multiplica el peso*100 y
+                    el resultado (obtenido es cc/dia) dividimos por 24 obtendremos
+                    cc/hr.
+                    </li>
+                    <li>
+                    Para niños de 11 a 20 kg, se debera sumas 1000 + (peso del
+                    paciente * 50) y el resultado (obtenido es cc/dia) dividimos por
+                    24 obtendremos cc/hr.
+                    </li>
+                    <li>
+                    Para niños de < 20 kg, se debera sumas 1500 + (peso del paciente *
+                    20) y el resultado (obtenido es cc/dia) dividimos por 24
+                    obtendremos cc/hr.
+                    </li>
+                    <li>
+                    Para niños de < 30 kg, se calcula midiendo la SUPERFICIE CORPORAL
+                    de la siguiente manera<br /><br />
+                    Superficie corporal = ( (peso * 4) + 7) / (peso + 90) y el
+                    resultado se multiplicamos por 1500
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        
+    </body>
 </html>
