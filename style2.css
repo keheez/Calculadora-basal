@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
+:root {
+  --Azure: #f0ffff;
+  --blue-gradient: linear-gradient(176.29deg, #14bcf1 34%, #0219e9 109%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.cuerpo2 {
+  width: 100vw;
+  height: 100vh;
+  background: var(--Azure);
+  font-family: "Poppins", "Sans-Serif";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor2 {
+  width: 85%;
+  max-width: 850px;
+  min-width: 350px;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3),
+    -5px -5px 10px rgba(255, 255, 255, 0.8);
+  border-radius: 35px;
+  overflow: hidden;
+}
+.notas2 {
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  background: var(--blue-gradient);
+  color: var(--Azure);
+}
+.contenido2 {
+  width: 100%;
+  height: 90%;
+}
+.detalles2 {
+  width: 100%;
+  background: rgba(248, 241, 241, 0.95);
+  padding: 0.9rem;
+  margin: 2px;
+  text-align: center;
+}
+.contenido2 ul li {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.detalles2 a {
+  background: var(--blue-gradient);
+  padding: 7px;
+  border: none;
+  border-radius: 9px;
+  color: var(--Azure);
+  transform: scale(0.5);
+  box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
