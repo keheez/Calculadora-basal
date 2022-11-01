@@ -1,173 +1,126 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
-body{
-        background-color: #f6f5f7;
-        font-family:'Montserrat',sans-serif;
-        text-align: center;   
-    }
-#contenedor {
-    width: 900px; 
-    height: 500px;
-    position: absolute;
-    background-color: red;
-    inset: 0;
-    margin: auto;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
-    0 10px 10px rgba(0,0,0,0.22);
-    }    
-#formulario {
-    background-color:white;
-    float: left;
-    width: 50%;
-    height: 100%;
-}   
-
-#detalle{
-    background-color:#FF416C;
-    float: left;
-    width: 50%;
-    height: 100%;
-    color: #eee;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
+:root {
+  --DarkSlateGray: #2f4f4f;
+  --Azure: #f0ffff;
+  --blue-gradient: linear-gradient(176.29deg, #0219e9 -64.48%, #14bcf1 100%);
+  --Columbia-Blue: #cee5f2;
+  --red: #e10c3efa;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background: var(--Azure);
+  font-family: "Poppins", "Sans-Serif";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor {
+  width: 85%;
+  max-width: 850px;
+  min-width: 350px;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3),
+    -5px -5px 10px rgba(255, 255, 255, 0.8);
+  border-radius: 35px;
+  overflow: hidden;
+}
+.formulario {
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  background: rgba(248, 241, 241, 0.95);
+}
+.contenido {
+  width: 100%;
+  height: 90%;
+}
+.contenido h1 {
+  font-size: 2rem;
+  line-height: 35px;
+  letter-spacing: 0.4px;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+.contenido input {
+  width: 90%;
+  max-width: 600px;
+  background: transparent;
+  background: var(--Azure);
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  margin: 1rem 0;
+  font-size: 0.8rem;
+  font-family: "Poppins", "Sans-Serif";
+  font-weight: 500;
+  color: var(--DarkSlateGray);
+  cursor: pointer;
 }
 
-.contenido{
-    top: 50%;
-    position: relative;
-    transform: translateY(-50%);
-    overflow: hidden;
+.contenido button {
+  background: var(--blue-gradient);
+  width: 160px;
+  padding: 8px 2px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--Azure);
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 1rem;
+  box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
-#centrado{
-    text-align: left;
+.contenido button:active {
+  transform: scale(0.9);
 }
-input {
-    background-color: #eee;
-    padding: 10px 15px;
-    border: none;
-    font-family:'Montserrat',sans-serif;
-    width: 70%;
-    display: block;
-    margin: auto;
-    margin-bottom: 5%;
-    /*al escribir que no salga el recuadro negro*/
-}  
-.boton{
-    padding: 10px 23px;
-    font-family:'Montserrat',sans-serif;
-    font-weight: 900;
-    font-size: 15px;
-    text-transform: uppercase;  
-    background-color: #FF416C;
-    color: azure;
-    letter-spacing: 2px;
-    border: none;
-    border-radius: 25px;
-      
-    /* ver porque el boton no da click*/
-}   
-.boton:active{
-    background-color: transparent;
-    border: solid 1px rgb(142, 23, 222);
-    color: #FF416C;
-    
+.contenido p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--red);
 }
-#volumen {
-    color: rgb(142, 23, 222);
-    font-size: 25px;
-    font-weight: 900;
-    
+.mant__Medio {
+  font-weight: 700;
+  margin-left: 0.5rem;
 }
-.unidadmedida{
-    color: rgb(142, 23, 222);
-    font-size: 25px;
-    font-weight: 900;    
+.detalles {
+  width: 100%;
+  background: var(--blue-gradient);
+  padding: 2rem;
+  text-align: center;
+  color: var(--Azure);
 }
-/* Centra el input personalizado con el texto */
-.custom-radio-checkbox {
-    display: inline-flex;
-    align-items: flex-start;
-    cursor: pointer;
-    font-family:'Montserrat',sans-serif;
-    font-weight: 900;
-    font-size: 15px
+.detalles h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.detalles ul {
+  list-style: none;
+}
+.detalles ul li {
+  margin: 0.5rem 0;
+}
+.detalles a {
+  background: var(--blue-gradient);
+  padding: 7px;
+  border: none;
+  border-radius: 20px;
+  color: var(--Azure);
+  transform: scale(0.5);
+  box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
-/* Modificador para dar la imagen de radio */
-.custom-radio-checkbox__show--radio {
-    background-image: url(./radio-uncheck.png);
-}
-/* Oculta input original */
-.custom-radio-checkbox > .custom-radio-checkbox__input {
-    display: none;
-}
-/* Radio personalizado usando <span> */
-.custom-radio-checkbox > .custom-radio-checkbox__show {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin-right: 5px;
-    background-size: contain;
-}
-/* Cambia el radio personalizado cuando es pulsado */
-.custom-radio-checkbox > .custom-radio-checkbox__input:checked + .custom-radio-checkbox__show--radio {
-    background-image: url(./radio-check.png);
-}
-
-#check{
-    text-align: left;
-    margin-left: 55px ;
-    height: 55px;
-}
-
-
-#tablaresultado{
-    visibility: hidden;
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 10%;
-    text-align: center;
-    
-}
-.container{
-    width: 100%;
-    max-width: 90%;
-    margin: auto;
-}
-.table{
-    width: 100%;
-    border: 1px transparent   #FF416C;
-    border-collapse:collapse ;
-
-    margin:2px;
-    padding: 1;
-}
-.table caption{
-    font-size:larger;
-    font-weight: bold;
-    margin: 3px;  
-}
-.table tr{
-    background-color: #FF416C;
-    color: #eee;
-    border: 0.05px solid #eee; 
-    padding: 8px;
-
-}
-.table th {
-padding: 8px;
-text-align: center;
-}
-.table tbody tr:hover{
-background-color: #ce214a;
-}
-
-#metodo{
-font-family:'Montserrat',sans-serif;
-text-align: center;
-overflow: auto;
-transform: translate(50%);
-background-color: #FF416C;
-color: #eee;
-float: left;
-width: 50%;
-height: 100%;
-margin: 45px 10px 45px 10px ;
+@media only screen and (min-width: 850px) {
+  .contenedor {
+    display: flex;
+    flex-direction: row;
+  }
 }
